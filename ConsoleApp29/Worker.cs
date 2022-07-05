@@ -13,7 +13,6 @@ namespace ConsoleApp29
         private int working;
         private int id;
         private static int lastId;
-
         public string Name
         {
             get { return name; }
@@ -46,7 +45,6 @@ namespace ConsoleApp29
         {
             return $"#{ID} Name: {Name}, Age: {Age}, W: {Working}";
         }
-
         public static void PrintInfo(List<Worker> workers)
         {
             foreach (Worker item in workers)
@@ -55,7 +53,6 @@ namespace ConsoleApp29
             }
             Console.WriteLine();
         }
-
         public class SortClass : IComparer<Worker>
         {
             public enum ESortMetod
@@ -87,6 +84,5 @@ namespace ConsoleApp29
                 else return 0;
             }
         }
-
     }
 }
